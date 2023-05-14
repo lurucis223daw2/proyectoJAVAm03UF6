@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="275.0" prefWidth="349.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.fje.provajavafx.SumaController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <Label text="numero 1" />
+      <TextField fx:id="num1" />
+      <Label text="numero 2" />
+      <TextField fx:id="num2" />
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="botoSuma" mnemonicParsing="false" onAction="#onSumaButtonClick" text="+">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <Button fx:id="botoResta" mnemonicParsing="false" onAction="#onRestaButtonClick" text="-">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <Button fx:id="botoProducte" mnemonicParsing="false" onAction="#onProducteButtonClick" text="*">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <Button fx:id="botoDivisio" mnemonicParsing="false" onAction="#onDivisioButtonClick" styleClass="btn, btn-danger" text="/">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+         </children>
+         <padding>
+            <Insets left="50.0" />
+         </padding>
+      </HBox>
+      <Label fx:id="resultat" styleClass="lbl-primary" text="El resultat és">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+   </children>
+
+  
+</VBox>
